@@ -2,4 +2,6 @@
   display: flex;
 }
 
-#yearBar
+#yearBar {
+  width: 50px;
+}
