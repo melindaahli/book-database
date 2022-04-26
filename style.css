@@ -1,3 +1,7 @@
 .container {
   display: flex;
 }
+
+.volume {
+  width: 2000px;
+}

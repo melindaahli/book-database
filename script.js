@@ -15,9 +15,12 @@ $("#searchButton").click(function () {
       console.log(data.items[0].volumeInfo.title);
       data.items.forEach((book) => {
         console.log(book);
+        $(".bookResults").append("<div class='volume'>");
         $(".bookResults").append(`<p>${book.volumeInfo.title}</p>`);
-        $(".bookResults").append(`<img src=>${book.volumeInfo.imageLinks.thumbnail}`);
+        $(".bookResults").append(
+          `<img src=${book.volumeInfo.imageLinks.thumbnail}/>`
+        );
+        $(".bookResults").append("</div>");
       });
-    
     });
 });
