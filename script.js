@@ -1,8 +1,8 @@
 $("#searchButton").click(function () {
-  let inputYear = $("#yearBar").val();
+  let inputAuthor = $("#authorBar").val();
   let inputTerm = $("#searchBar").val();
 
-  let URL = `http://www.omdbapi.com/?apikey=8e9ded79&y=${inputYear}&s=${inputTerm}`;
+  let URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+inauthor:${inputAuthor}`;
 
   console.log(URL);
 
@@ -12,5 +12,8 @@ $("#searchButton").click(function () {
     })
     .then(function (data) {
       console.log(data);
-      
+      data.items.volumeInfo.forEach(title){
+        $(".bookResults").append(title);
+      }
+    });
 });
