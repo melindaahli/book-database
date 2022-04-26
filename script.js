@@ -12,8 +12,5 @@ $("#searchButton").click(function () {
     })
     .then(function (data) {
       console.log(data);
-      data.forEach(function (movie) {
-$(".movieResults").html(`<h3>${movie.search.title}</h3>`);
-});
-    });
+      
 });
