@@ -12,8 +12,12 @@ $("#searchButton").click(function () {
     })
     .then(function (data) {
       console.log(data);
-      data.items.volumeInfo.forEach(title){
-        $(".bookResults").append(title);
-      }
+      console.log(data.items[0].volumeInfo.title);
+      data.items.forEach((book) => {
+        console.log(book);
+        $(".bookResults").append(`<p>${book.volumeInfo.title}</p>`);
+        $(".bookResults").append(`<img src=>${book.volumeInfo.imageLinks.thumbnail}`);
+      });
+    
     });
 });
