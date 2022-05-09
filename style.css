@@ -11,3 +11,11 @@
 img {
   width: 150px;
 }
+
+.sans-serif {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.cursive {
+  font-family: 'Autour One', cursive;
+}

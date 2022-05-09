@@ -22,8 +22,8 @@ $("#searchButton").click(function () {
         $(".bookResults").append("</div>");
         */
         $(".bookResults").append(`<div class='volume'>
-        <img src=${book.volumeInfo.imageLinks.thumbnail}/>
-        <p>${book.volumeInfo.title}</p>
+        <img src=${book.volumeInfo.imageLinks.thumbnail}/ >
+        <p class="sans-serif">${book.volumeInfo.title}</p>
         </div>
         `);
       });
