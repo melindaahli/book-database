@@ -12,24 +12,36 @@ img {
   width: 150px;
 }
 
-.sans-serif {
+input {
   font-family: "Plus Jakarta Sans", sans-serif;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
-.cursive {
-  font-family: "Cute Font", cursive;
-  font-size: 60px;
+button {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 h1 {
   margin-bottom: 0px;
+  margin-top:0px;
+  font-family: "Cute Font", cursive;
+  font-size: 60px;
 }
 
 p {
   margin-bottom: 5px;
   margin-top: 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .corner {
   float:right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#reviewContent {
+  width: 1000px;
+  height:400px;
 }
