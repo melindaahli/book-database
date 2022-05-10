@@ -30,8 +30,7 @@ $("#submitB").click(function(){
   let reviewContent = $("#reviewContent").val();
   
   $(".userReviews").append(`<div class="aReview">
-  <p>${reviewTitle}</p>
-  <p>${reviewRating}/10</p>
+  <p>${reviewTitle}    [${reviewRating}/10]</p>
   <p>${reviewContent}</p>
   </div>`);
 });

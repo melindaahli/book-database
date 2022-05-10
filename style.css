@@ -59,5 +59,8 @@ p {
 }
 
 .aReview {
-margin-top: 5px;
+margin-top: 15px;
+  border: dashed 1px gray;
+  width: 400px;
+  padding: 5px;
 }
