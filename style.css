@@ -13,5 +13,23 @@ img {
 }
 
 .sans-serif {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.cursive {
+  font-family: "Cute Font", cursive;
+  font-size: 60px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.corner {
+  float:right;
 }
