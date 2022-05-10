@@ -24,3 +24,14 @@ $("#searchButton").click(function () {
     });
 });
 
+$("#submitB").click(function(){
+  let reviewTitle = $("#reviewTitle").val();
+  let reviewRating = $("#reviewRating").val();
+  let reviewContent = $("#reviewContent").val();
+  
+  $(".userReviews").append(`<div class="aReview">
+  <p>${reviewTitle}</p>
+  <p>${reviewRating}/10</p>
+  <p>${reviewContent}</p>
+  </div>`);
+});
