@@ -3,6 +3,10 @@
   flex-wrap: wrap;
 }
 
+.flex-down {
+  flex-direction: column;
+}
+
 .volume {
   width: 150px;
   margin: 20px;
@@ -16,6 +20,14 @@ input {
   font-family: "Plus Jakarta Sans", sans-serif;
   margin-right: 5px;
   margin-bottom: 5px;
+  width: 200px;
+}
+
+textarea {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 410px;
+  height:400px;
+  resize: none;
 }
 
 button {
@@ -42,6 +54,6 @@ p {
 }
 
 #reviewContent {
-  width: 1000px;
+  width: 410px;
   height:400px;
 }

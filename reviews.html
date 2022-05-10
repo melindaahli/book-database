@@ -11,10 +11,14 @@
     <h1>Book Database</h1>
     
     <p>My Reviews</p>
-    <div class="userReviews container">
+    <div class="userReviews container flex-down">
+      <div>
       <input id="reviewTitle" placeholder="title">
       <input id="reviewRating" placeholder="rating out of 10">
-      <input id="reviewContent" placeholder="your review">
+      </div>
+      <div>
+        <textarea id="reviewContent" placeholder="your review" rows="auto"></textarea>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
