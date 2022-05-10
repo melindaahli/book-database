@@ -28,6 +28,7 @@ textarea {
   width: 410px;
   height:400px;
   resize: none;
+  margin-bottom: 5px;
 }
 
 button {
@@ -53,7 +54,6 @@ p {
   margin-right: 10px;
 }
 
-#reviewContent {
+#submitB {
   width: 410px;
-  height:400px;
 }
