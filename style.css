@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 600px;
 }
 
 .flex-down {
@@ -12,9 +13,6 @@
   margin: 20px;
 }
 
-img {
-  width: 150px;
-}
 
 input {
   font-family: "Plus Jakarta Sans", sans-serif;
