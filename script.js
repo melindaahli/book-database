@@ -3,15 +3,15 @@ $("#searchButton").click(function () {
   let inputTerm = $("#searchBar").val();
   let inputAuthor = $("#authorBar").val();
 
-  let URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+inauthor:${inputAuthor}&maxResults=40`;
+  let URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+intitle:${inputTerm}+inauthor:${inputAuthor}&maxResults=20`;
   
-  if (inputTerm === "") {
+if (inputTerm === "") {
     URL = `https://www.googleapis.com/books/v1/volumes?inauthor:${inputAuthor}`;
   } else if (inputAuthor === "") {
-    URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}`;
+    URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+intitle:${inputTerm}&maxResults=40`;
+  } else {
+    
   }
-  inputTerm = inputTerm.replace(/ /g, "+");
-  inputAuthor = inputAuthor.replace(/ /g, "+");
 
   $(".bookresults").html("");
   console.log(URL);  
