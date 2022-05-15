@@ -30,6 +30,7 @@ input {
 
 .userReviews {
   width: 75%;
+  margin-left: 10px;
 }
 
 #submitB {
