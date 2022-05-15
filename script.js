@@ -1,12 +1,21 @@
 $("#searchButton").click(function () {
-  let inputAuthor = $("#authorBar").val();
+  
   let inputTerm = $("#searchBar").val();
+  let inputAuthor = $("#authorBar").val();
 
   let URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+inauthor:${inputAuthor}`;
-  console.log(URL);
+  let termLength = inputTerm.length();
+  let authorLength = inputAuthor.length();
+  
+  if (inputTerm === "") {
+    URL = `https://www.googleapis.com/books/v1/volumes?inauthor:${inputAuthor}`;
+  } else if (inputAuthor === "") {
+    URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}`;
+  }
 
   $(".bookresults").html("");
-
+  console.log(URL);  
+  
   fetch(URL)
     .then(function (response) {
       return response.json();
