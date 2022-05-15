@@ -22,22 +22,26 @@ input {
 }
 
 .aReview {
-margin-top: 15px;
+  margin-top: 15px;
   border: dashed 1px gray;
-  width: 72%;
   padding: 5px;
+  width: 100px;
+}
+
+.userReviews {
+  width: 75%;
+}
+
+#submitB {
+  width: 100%;
 }
 
 textarea {
   font-family: "Plus Jakarta Sans", sans-serif;
-  width: 71.2%;
   height:400px;
   resize: none;
+  width: 100%;
   margin-bottom: 5px;
-}
-
-#submitB {
-  width: 71.2%;
 }
 
 button {
