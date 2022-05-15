@@ -33,4 +33,8 @@ $("#submitB").click(function(){
   <p>${reviewTitle}    [${reviewRating}/10]</p>
   <p>${reviewContent}</p>
   </div>`);
+  
+  $("#reviewTitle").val('');
+  $("#reviewRating").val('');
+  $("#reviewContent").val('');
 });

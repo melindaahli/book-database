@@ -49,7 +49,7 @@ p {
 }
 
 .corner {
-  float:right;
+  position: fixed;
   margin-top: 20px;
   margin-right: 10px;
 }
