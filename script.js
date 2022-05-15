@@ -1,21 +1,23 @@
-$("#searchButton").click(function () {
-  
-  let inputTerm = $("#searchBar").val();
-  let inputAuthor = $("#authorBar").val();
+let inputTerm;
+let inputAuthor;
+let URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+intitle:${inputTerm}+inauthor:${inputAuthor}&maxResults=20`;
 
-  let URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+intitle:${inputTerm}+inauthor:${inputAuthor}&maxResults=20`;
-  
-if (inputTerm === "") {
-    URL = `https://www.googleapis.com/books/v1/volumes?inauthor:${inputAuthor}`;
+$("#searchButton").click(function () {
+  inputTerm = $("#titleBar").val();
+  inputAuthor = $("#authorBar").val();
+
+  $(".bookresults").html("");
+
+  if (inputTerm === "") {
+    URL = `https://www.googleapis.com/books/v1/volumes?q=${inputAuthor}+inauthor:${inputAuthor}&maxResults=40`;
   } else if (inputAuthor === "") {
     URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+intitle:${inputTerm}&maxResults=40`;
   } else {
-    
+    URL = `https://www.googleapis.com/books/v1/volumes?q=${inputTerm}+intitle:${inputTerm}+inauthor:${inputAuthor}&maxResults=20`;
   }
 
-  $(".bookresults").html("");
-  console.log(URL);  
-  
+  console.log(URL);
+
   fetch(URL)
     .then(function (response) {
       return response.json();
@@ -33,17 +35,17 @@ if (inputTerm === "") {
     });
 });
 
-$("#submitB").click(function(){
+$("#submitB").click(function () {
   let reviewTitle = $("#reviewTitle").val();
   let reviewRating = $("#reviewRating").val();
   let reviewContent = $("#reviewContent").val();
-  
+
   $(".userReviews").append(`<div class="aReview">
   <p>${reviewTitle}    [${reviewRating}/10]</p>
   <p>${reviewContent}</p>
   </div>`);
-  
-  $("#reviewTitle").val('');
-  $("#reviewRating").val('');
-  $("#reviewContent").val('');
+
+  $("#reviewTitle").val("");
+  $("#reviewRating").val("");
+  $("#reviewContent").val("");
 });

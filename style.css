@@ -71,6 +71,11 @@ margin-top: 15px;
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-left: 10px;
+}
+
+#searchBar {
+  margin-left: 10px;
 }
 
 img.icon {
