@@ -25,7 +25,7 @@ $("#searchButton").click(function () {
     .then(function (data) {
       data.items.forEach((book) => {
         $(".bookResults").append(`<div class='volume'>
-        <a href="${book.}">
+        <a href="${book.volumeInfo.previewLink}" target="blank_">
         <img src=${book.volumeInfo.imageLinks.thumbnail}/>
         </a>
         <p class="sans-serif">${book.volumeInfo.title}</p>
