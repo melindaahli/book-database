@@ -20,15 +20,14 @@ input {
   margin-bottom: 5px;
   width: 35%;
   height: 25px;
-  border-radius: 50px;
+border-radius: 10px;
   border: 0px;
 }
 
 .aReview {
   margin-top: 15px;
-  border: dashed 1px gray;
   padding: 5px;
-  width: 100px;
+  width: 25%;
 }
 
 .userReviews {
