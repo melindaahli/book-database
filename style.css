@@ -37,8 +37,16 @@ input {
   width: 100%;
 }
 
+#reviewTitle, #reviewRating {
+  width: 49.4%;
+}
+
+#reviewRating {
+  margin-right: 0px;
+}
+
 .reviewDesc {
-  width: 75%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -84,4 +92,9 @@ p {
 img.icon {
   width: 45px;
   height:45px;
+}
+
+body{
+  color:pink;
+  background-color:#e75480;
 }

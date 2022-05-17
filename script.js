@@ -25,7 +25,7 @@ $("#searchButton").click(function () {
     .then(function (data) {
       data.items.forEach((book) => {
         $(".bookResults").append(`<div class='volume'>
-        <a href="">
+        <a href="${book.}">
         <img src=${book.volumeInfo.imageLinks.thumbnail}/>
         </a>
         <p class="sans-serif">${book.volumeInfo.title}</p>
@@ -33,6 +33,10 @@ $("#searchButton").click(function () {
         `);
       });
     });
+  
+  $("#titleBar").val("");
+  $("#authorBar").val("");
+  
 });
 
 $("#submitB").click(function () {
